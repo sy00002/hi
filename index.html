@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIGROUND</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .logo img {
+            width: 20%;
+            max-width: 971px;
+            height: auto;
+        }
+        .poster img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .description {
+            max-width: 1000px;
+            font-size: calc(12px + 1vw);
+            line-height: 1.5;
+            text-align: center;
+        }
+        .download-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #D6000F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #D6000F;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/BLACKCI.png" alt="로고" width="971" height="166">
+    </div>
+
+    <div class="container">
+        <div class="poster">
+            <img src="img/rfposter.webp" alt="영화 포스터" width="1000" height="1432">
+        </div>
+        <!-- 영화 설명 -->
+        <div class="description">
+            <p>"보통의 가족"(영어: A Normal Family)은 2023년 제작된 대한민국의 드라마 영화이다. 허진호가 감독을 맡았으며, 헤르만 코흐의 소설 《디너》가 영화의 원작이다. 2023년 토론토 국제 영화제에서 전 세계 최초로 공개되었다.</p>
+        </div>
+        <!-- 다운로드 버튼 -->
+        <a href="보통의 가족 언론평.xlsx" download="보통의가족언론평">
+            <button class="download-btn">다운로드</button>
+        </a>
+    </div>
+</body>
+</html>
